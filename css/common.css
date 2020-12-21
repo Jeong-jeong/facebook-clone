@@ -434,206 +434,194 @@
   --dataviz-supplementary-4: rgb(50, 52, 54);
 }
 
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+}
 
 .icon {
   margin-right: 10px;
 }
 
 .icon:hover {
-/* 선택자 뒤에 (:)을 넣게 되면 가상 선택자 >> action을 했을 때만 보여지는 것 */
-  opacity: 1; 
+  /* 선택자 뒤에 (:)을 넣게 되면 가상 선택자 >> action을 했을 때만 보여지는 것 */
+  opacity: 1;
   /* opacity: 1 = 100% */
 }
 
 .icon--send {
   display: inline-block;
-  background: url('../imgs/bg04.png') no-repeat -433px -246px;
+  background: url("../imgs/bg04.png") no-repeat -433px -246px;
   width: 18px;
   height: 16px;
 }
 
-
 .icon--main-logo {
   display: inline-block;
-  background: url('../imgs/bg03.png') no-repeat 0 -33px;
+  background: url("../imgs/bg03.png") no-repeat 0 -33px;
   width: 24px;
   height: 24px;
 }
 
-
 .icon--news {
   display: inline-block;
-  background: url('../imgs/bg01.png') no-repeat -1px -964px;
+  background: url("../imgs/bg01.png") no-repeat -1px -964px;
   width: 18px;
   height: 18px;
 }
 
 .icon--picture {
   display: inline-block;
-  background: url('../imgs/bg01.png') no-repeat -1px -1090px;
+  background: url("../imgs/bg01.png") no-repeat -1px -1090px;
   width: 19px;
   height: 18px;
 }
 
-
 .icon--messenger {
   display: inline-block;
-  background: url('../imgs/bg01.png') no-repeat 0 -249px;
+  background: url("../imgs/bg01.png") no-repeat 0 -249px;
   width: 20px;
   height: 20px;
 }
 
 .icon--save {
   display: inline-block;
-  background: url('../imgs/bg01.png') no-repeat -1px -396px;
+  background: url("../imgs/bg01.png") no-repeat -1px -396px;
   width: 16px;
   height: 20px;
 }
 
-
 .icon--search-black {
   display: inline-block;
-  background: url('../imgs/bg02.png') no-repeat 0 -949px;
+  background: url("../imgs/bg02.png") no-repeat 0 -949px;
   width: 14px;
   height: 14px;
 }
-
 
 .icon--search-white {
   display: inline-block;
-  background: url('../imgs/bg02.png') no-repeat 0 -964px;
+  background: url("../imgs/bg02.png") no-repeat 0 -964px;
   width: 14px;
   height: 14px;
 }
 
-
 .icon--people-black {
   display: inline-block;
-  background: url('../imgs/bg02.png') no-repeat -2px -791px;
+  background: url("../imgs/bg02.png") no-repeat -2px -791px;
   width: 20px;
   height: 18px;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .icon--people-white {
   display: inline-block;
-  background: url('../imgs/bg02.png') no-repeat -2px -766px;
+  background: url("../imgs/bg02.png") no-repeat -2px -766px;
   width: 20px;
   height: 18px;
 }
 
 .icon--bell-black {
   display: inline-block;
-  background: url('../imgs/bg02.png') no-repeat -3px -188px;
+  background: url("../imgs/bg02.png") no-repeat -3px -188px;
   width: 20px;
   height: 24px;
-  opacity: .6;
+  opacity: 0.6;
 }
-
 
 .icon--question-black {
   display: inline-block;
-  background: url('../imgs/bg03.png') no-repeat -2px -135px;
+  background: url("../imgs/bg03.png") no-repeat -2px -135px;
   width: 20px;
   height: 20px;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .icon--question-white {
   display: inline-block;
-  background: url('../imgs/bg03.png') no-repeat 0 -313px;
+  background: url("../imgs/bg03.png") no-repeat 0 -313px;
   width: 20px;
   height: 20px;
 }
 
-
 .icon--messenger--black {
-  display:inline-block;
-  background: url('../imgs/bg02.png') no-repeat 0 -13px;
+  display: inline-block;
+  background: url("../imgs/bg02.png") no-repeat 0 -13px;
   width: 24px;
   height: 24px;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .icon--chart--black {
-  display:inline-block;
-  background: url('../imgs/bg06.png') no-repeat -104px -2440px;
+  display: inline-block;
+  background: url("../imgs/bg06.png") no-repeat -104px -2440px;
   width: 28px;
   height: 17px;
-  opacity: .6;
+  opacity: 0.6;
 }
-
 
 .icon--facebook-white {
   display: inline-block;
-  background: url('../imgs/bg03.png') no-repeat 0 -33px;
+  background: url("../imgs/bg03.png") no-repeat 0 -33px;
   width: 24px;
   height: 24px;
 }
 
 .icon--more {
   display: inline-block;
-  background: url('../imgs/bg03.png') no-repeat -2px -300px;
+  background: url("../imgs/bg03.png") no-repeat -2px -300px;
   width: 16px;
   height: 4px;
 }
 
-
 .icon--comment-line {
   display: inline-block;
-  background: url('../imgs/bg04.png') no-repeat -414px -246px;
+  background: url("../imgs/bg04.png") no-repeat -414px -246px;
   width: 17px;
   height: 17px;
 }
 
-
 .icon--share-line {
   display: inline-block;
-  background: url('../imgs/bg04.png') no-repeat -433px -246px;
+  background: url("../imgs/bg04.png") no-repeat -433px -246px;
   width: 18px;
   height: 16px;
-
 }
 
 .icon--write-gray {
   display: inline-block;
-  background: url('../imgs/bg04.png') no-repeat -206px -282px;
+  background: url("../imgs/bg04.png") no-repeat -206px -282px;
   width: 12px;
   height: 12px;
 }
 
-
 .icon--like-line {
   display: inline-block;
-  background: url('../imgs/bg05.png') no-repeat -38px -422px;
+  background: url("../imgs/bg05.png") no-repeat -38px -422px;
   width: 18px;
   height: 18px;
 }
 
 .icon--like-fill {
   display: inline-block;
-  background: url('../imgs/bg05.png') no-repeat 0 -422px;
+  background: url("../imgs/bg05.png") no-repeat 0 -422px;
   width: 17px;
   height: 18px;
 }
 
-
-
 .icon--arrow-right {
   display: inline-block;
-  background: url('../imgs/bg06.png') no-repeat -136px -2433px;
+  background: url("../imgs/bg06.png") no-repeat -136px -2433px;
   width: 16px;
   height: 30px;
 }
 
 .icon--arrow-top {
   display: inline-block;
-  background: url('../imgs/bg06.png') no-repeat -1px -2466px;
+  background: url("../imgs/bg06.png") no-repeat -1px -2466px;
   width: 30px;
   height: 16px;
 }
 
-.profile_img{
+.profile_img {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -644,11 +632,11 @@
   margin-right: 10px;
 }
 
-.profile_img img{
+.profile_img img {
   width: 100%;
   height: 100%;
   /* 좌우값과 높이값을 부모의 100%로 하지 않으면 좀 넘침 */
-} 
+}
 
 #header {
   width: 100vw;
@@ -661,7 +649,7 @@
   /* header가 다른 컨텐츠에 묻히면 안되므로 제일 높게 */
 }
 
-#header .inner{
+#header .inner {
   width: 1012px;
   height: 42px;
   /* background-color: darkgray; */
@@ -674,18 +662,18 @@
   /* 서브축(y축) 가운데 정렬 */
 }
 
-#header .inner .left{
+#header .inner .left {
   display: flex;
 }
 
-#header .inner .left .search_container{
+#header .inner .left .search_container {
   width: 380px;
   height: 23px;
   background: #fff;
   position: relative;
 }
 
-#header .inner .left button{
+#header .inner .left button {
   position: absolute;
   right: -20px;
   padding: 4px 10px;
@@ -696,7 +684,7 @@
   background: transparent;
 }
 
-#search{
+#search {
   border: none;
   border-radius: 3px;
   /* 귀퉁이를 둥글둥글하게 */
@@ -706,8 +694,7 @@
 }
 /* left 끝 */
 
-
-#header .inner .right{
+#header .inner .right {
   display: flex;
   /* 오른쪽 헤더안의 아이템 각각을 가로배치 */
   font-size: 12px;
@@ -716,22 +703,21 @@
   align-items: center;
 }
 
-#header .inner .right .my_name{
+#header .inner .right .my_name {
   display: flex;
   align-items: center;
 }
 
-
-#header .inner .right > div{
+#header .inner .right > div {
   /* .right 안에 있는 각각의 친자식들(>)에게 스타일링하는 친자식 선택자 */
   margin-left: 20px;
   cursor: pointer;
   position: relative;
 }
 
-#header .inner .right > div:after{
+#header .inner .right > div:after {
   /* 태그로 감싼 내부 텍스트 끝에 지정한 content를 붙여 넣음 */
-  content: '';
+  content: "";
   width: 1px;
   height: 18px;
   position: absolute;
@@ -745,12 +731,107 @@
   /* var () 함수는 두 개의 대시(--)로 시작하는 사용자 지정속성 값으로 지정할 때 사용 */
 }
 
-#header .inner .right > div:last-child:after{
+#header .inner .right > div:last-child:after {
   /* div 중에 마지막 div만 선택하고 after라는 애 선택 */
   display: none;
 }
 
-#header .right .icon{
+#header .right .icon {
   margin-right: 0;
   /* 오른쪽 header의 아이콘들은 margin-right: 10px이 필요 없음 */
+}
+
+#header .icon--bell-black{
+  position: relative;
+}
+
+#header .bell:before{
+  /* before로 넣은 이유는 .bell에 이미 after가 있어서 중복됨
+  before, after 하나씩 넣어줄 수 있기 때문에 효과를 받기 위해 before */
+  content: '1';
+  color: #fff;
+  background-color: var(--notification-badge);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  font-size: 10px;
+  position: absolute;
+  /* 포지션을 받아서 공중에 떠 있어야 함 */
+  right: -3px;
+  top: -3px;
+  z-index: 100;
+}
+
+#header .notice{
+  width: 432px;
+  background-color: #fff;
+  position: absolute;
+  right: -16px;
+  top: 36px;
+  z-index: 1000;
+  border: 1px solid rgba(100, 100, 100, .4);
+  /* rgba는 red,green,blue + alpha(투명도) */
+  border-radius: 0 0 4px 4px;
+  /* 좌, 우, 하단 우, 하단 좌 순서임 */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  /* 수평(x), 수직(y), 흐릿함, 확산, 색상 */
+  color: #1d2129;
+  /* 폰트 색상 */
+  display: none;
+}
+
+#header .icon--arrow-top{
+  position: absolute;
+  right: 10px;
+  top: -13px;
+}
+
+#header .notice h3{
+  font-size: 12px;
+  color: #333;
+  padding: 8px 12px 6px;
+  border-bottom: solid 1px #dddfe2;
+}
+
+#header .notice ul{
+  /* 스크롤 기능 추가 */
+  /* overflow는 요소 내 컨텐츠가 너무 커 넘칠 경우 
+  어떻게 보여줄지 결정 */
+  overflow-x: hidden;
+  overflow-y: auto; 
+  /* y축으로 넘치는 순간 자동으로 scroll 기능 */
+  max-height: 500px;
+  /* 최대 높이가 500px이 넘지 않도록 */
+}
+
+#header .notice ul > li{
+  padding: 10px 12px;
+  font-weight: 300;
+  border-bottom: 1px solid #dddfe2;
+}
+
+#header .notice ul > li > a{
+  display: flex;
+  align-items: center;
+}
+
+#header .notice ul > li:hover{
+  background-color: #edf2fa;
+}
+
+#header .notice .profile_img{
+  width: 48px;
+  height: 48px;
+}
+
+#header .notice .name{
+  font-weight: bold;
+}
+
+#header .notice .time{
+  color: #90949c;
+  margin-top: 10px;
 }
