@@ -436,6 +436,8 @@
 
 body{
   font-family: 'Nanum Gothic', sans-serif;
+  background-color: #e9eeee;
+  color: #1d2129; 
 }
 
 .icon {
@@ -834,4 +836,56 @@ body{
 #header .notice .time{
   color: #90949c;
   margin-top: 10px;
+}
+
+.left_box .icon--more{
+  margin-left: auto;
+  /* 오른쪽 끝으로 밀리게 됨 */
+  display: none;
+}
+
+.left_box .my_name{
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.left_box .my_name > a{
+  display: flex;
+  align-items: center;
+}
+
+.left_box ul > li{
+  padding: 5px 10px;
+  margin-bottom: 2px;
+  border: 1px solid transparent;
+  /* 만들어놓고 hover를 통해 보이도록 하는게 나음.
+  안그러면 hover로 급작스럽게 border가 생성되어 뒤틀림 */
+}
+
+.left_box ul > li > a{
+  display: flex;
+  align-items: center;
+}
+
+.left_box ul > li.active{
+  /* 붙여쓰게 되면 둘다 갖고 있는 띄어 쓰면 자식 요소 선택 */
+  border: 1px solid #dddfe2;
+  background: var(--fds-gray-00) ;
+}
+
+.left_box ul > li.active .icon--more{
+  display: block;
+  /* active를 갖고 있는 대상은 그 안에 있는 more역시 block으로 보이게끔 해놔애 함 
+  = 먼 말인지 이해 못함 */
+}
+
+
+.left_box ul > li:hover{
+  border: 1px solid #dddfe2;
+  background: var(--fds-gray-00) ;
+}
+
+.left_box ul > li:hover .icon--more{
+  display: block;
 }

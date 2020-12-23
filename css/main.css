@@ -1,0 +1,29 @@
+#wrapper {
+    width: 1012px;
+    margin: 0 auto;
+    padding-right: 205px;
+    position: relative;
+    top: 52px;
+    /* header가 position:fixed;로 공중에 떠 있기 때문에 top wrapper는 top값을 지정해줌  */
+}
+
+#wrapper .inner {
+    width: 100%;
+    position: relative;
+    /* 혹시 모르니 기준점으로 하나 넣어줌 */
+}
+
+#wrapper .inner .left_box {
+    width: 180px;
+    height: 500px;
+    /* background-color: royalblue; */
+    position: fixed;
+    /* left box는 고정 */
+    left: 300px;
+    /* fixed이기 때문에 고정 값이 필요. 나중에 JS로 값 변경 */
+    top: 52px;
+    font-size: 13px;
+}
+
+
+
