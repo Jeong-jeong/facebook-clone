@@ -224,7 +224,39 @@
                     </li>
                    </ul>
                </div>
-
+            <section id="contents_container">
+                <article class="create_box">
+                    <h2 class="title">게시물 만들기</h2>
+                    <div class="text-field">
+                        <form action="">
+                            <div class="top">
+                                <div class="profile_img"><img src="imgs/profile/me.jpg" alt=""></div>
+                                <p><textarea name="content" id="text-field" cols="50" rows="5" data-name="add" placeholder="P.d님, 무슨 생각을 하고 계신가요?"></textarea></p>
+                                <!-- data-name은 클릭을 했을 때 js로 작동하게 하려고 넣어둠 -->
+                            </div>
+                            <div class="middle">
+                               <canvas id="imageCanvas" width="0" height="0"></canvas> 
+                               <!--썸네일 이미지는 캔버스로 이미지가 옴.
+                                현재는 형태가 보이면 안되서 width, height 값 0  -->
+                            </div>
+                            <div class="bottom">
+                                <input type="file" name="photo" id="id_photo" required>
+                                <!-- required는 form 데이터가 서버로 제출되기 전 필수로 입력돼야 함을 명시 -->
+                                <div class="import-btn">
+                                    <!-- 기본 파일 버튼 말고 다른 이미지를 쓸 거기 때문에 label로 묶고 같은 id임을 명시 -->
+                                    <label for="id_photo" id="photo_label">
+                                    <span class="icon icon--picture"></span>
+                                    사진/동영상
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" id="submitBtn" value="게시" disabled>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </section>
            </div>
        </section>
    </section> 
