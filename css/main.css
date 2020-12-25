@@ -138,3 +138,105 @@
 .create_box .submit input:disabled{
     background: #9cb4d8;
 }
+
+#wrapper .contents{
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+    color: var(--fds-gray-70);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.contents header{
+    position: relative;
+    padding: 10px 20px;
+}
+
+.contents .profile_container{
+    display: flex;
+    align-items: center;
+}
+
+.contents .profile_container .name{
+    color: var(--fds-fb-blue-75);
+    font-size: 14px;
+    margin-bottom: 5px;
+
+}
+
+.contents .profile_container .time{
+    font-size: 12px;
+    color: #616770;
+}
+
+.contents .profile_container .profile_img{
+    width: 40px;
+    height: 40px;
+}
+
+.contents .more{
+    margin-left: auto;
+    cursor: pointer;
+    padding: 10px 0;
+    position: relative;
+}
+
+.contents .more.active .hidden_menu{
+    /* hidden_menu의 부모인 more가 active란 클래스를 받았을 때 hidden_menu가 block이 되도록 */
+    display: block;
+}
+
+
+.contents .hidden_menu{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 100px;
+    border-radius: 3px;
+    border: 1px solid #dddfe2;
+    display: none;
+    /* 클릭했을 때만 나오도록 display: none; */
+}
+
+.contents .hidden_menu > li{
+    padding: 5px 10px;
+    background-color: #fff;
+    text-align: center;
+    border-bottom: 1px solid rgba(221,223,226,0.57);
+}
+
+.contents .hidden_menu > li >*{
+    /* li 안에 있는 모든 태그들을 선택*/
+    background: transparent;
+    border: none;
+    font-size: 12px;
+    outline: none;
+    /* 클릭했을 때 나오는 테두리를 삭제 */
+    cursor: pointer;
+}
+
+.contents .hidden_menu > li:hover{
+    background: #ddd;
+}
+
+.contents .main_article{
+    padding: 5px 20px;
+    color: var(--fds-gray-100);
+    font-size: 14px;
+    line-height: 1.38;
+    font-weight: normal;
+}
+
+.contents .img_section{
+    overflow: hidden;
+    box-sizing: border-box;
+    /* 형태 계산시 border의 좌우값도 포함됨. 나중에 삐걱거리기 때문에
+    border의 영역도 내 크기로 포함시키겠음!을 의미 */
+    border: 1px solid#dddfe2;
+}
+
+.contents .img_section img{
+    width: 100%;
+}
