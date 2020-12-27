@@ -1,242 +1,332 @@
 #wrapper {
-    width: 1012px;
-    margin: 0 auto;
-    padding-right: 205px;
-    position: relative;
-    top: 52px;
-    /* header가 position:fixed;로 공중에 떠 있기 때문에 top wrapper는 top값을 지정해줌  */
+  width: 1012px;
+  margin: 0 auto;
+  padding-right: 205px;
+  position: relative;
+  top: 52px;
+  /* header가 position:fixed;로 공중에 떠 있기 때문에 top wrapper는 top값을 지정해줌  */
 }
 
 #wrapper .inner {
-    width: 100%;
-    position: relative;
-    /* 혹시 모르니 기준점으로 하나 넣어줌 */
+  width: 100%;
+  position: relative;
+  /* 혹시 모르니 기준점으로 하나 넣어줌 */
 }
 
 #wrapper .inner .left_box {
-    width: 180px;
-    height: 500px;
-    /* background-color: royalblue; */
-    position: fixed;
-    /* left box는 고정 */
-    left: 300px;
-    /* fixed이기 때문에 고정 값이 필요. 나중에 JS로 값 변경 */
-    top: 52px;
-    font-size: 13px;
+  width: 180px;
+  height: 500px;
+  /* background-color: royalblue; */
+  position: fixed;
+  /* left box는 고정 */
+  left: 300px;
+  /* fixed이기 때문에 고정 값이 필요. 나중에 JS로 값 변경 */
+  top: 52px;
+  font-size: 13px;
 }
 
 #contents_container {
-    max-width: 500px;
-    /* 반응형에서 width를 쓰게 되면 무조건 500px 만큼 나와야 함.
+  max-width: 500px;
+  /* 반응형에서 width를 쓰게 되면 무조건 500px 만큼 나와야 함.
     얘는 무조건 최댓값만 500px으로 설정!*/
-    position: relative;
-    left: 190px;
+  position: relative;
+  left: 190px;
 }
 
-#contents_container .create_box{
-    background-color: #fff;
-    margin-bottom: 10px;
-    border: 1px solid #dddfe2;
-    border-radius: 3px;
+#contents_container .create_box {
+  background-color: #fff;
+  margin-bottom: 10px;
+  border: 1px solid #dddfe2;
+  border-radius: 3px;
 }
 
-.create_box .title{
-    color: #4b4f56;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 14px;
-    padding: 8px 5px;
-    background-color: #f5f6f7;
-    border-bottom: 1px solid #dddfe2;
-    border-radius: 2px 2px 0 0;
+.create_box .title {
+  color: #4b4f56;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  padding: 8px 5px;
+  background-color: #f5f6f7;
+  border-bottom: 1px solid #dddfe2;
+  border-radius: 2px 2px 0 0;
 }
 
-.create_box .text-field{
-    padding: 8px;
+.create_box .text-field {
+  padding: 8px;
 }
 
-
-.create_box .text-field .top{
-    display: flex;
-    align-items: center;
-    color: #90949c;
-    font-size: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #dddfe2;
+.create_box .text-field .top {
+  display: flex;
+  align-items: center;
+  color: #90949c;
+  font-size: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dddfe2;
 }
 
-.create_box .text-field .top .profile_img{
-    margin-right: 20px;
+.create_box .text-field .top .profile_img {
+  margin-right: 20px;
 }
 
 .create_box .top > p {
-    width: 100%;
+  width: 100%;
 }
 
-.create_box #text-field{
-    border: none;
-    height: 24px;
-    width: 90%;
-    resize: none;
-    /* text-field는 원래 잡아당기면 늘어남. resize로 막음 */
-    font-size: 15px;
+.create_box #text-field {
+  border: none;
+  height: 24px;
+  width: 90%;
+  resize: none;
+  /* text-field는 원래 잡아당기면 늘어남. resize로 막음 */
+  font-size: 15px;
 }
 
-.create_box .text-field .middle{
-
+.create_box .text-field .middle {
 }
 
-
-.create_box .text-field .bottom{
-    font-size: 12px;
-    color: #4b4f56;
-    font-weight: bold;
+.create_box .text-field .bottom {
+  font-size: 12px;
+  color: #4b4f56;
+  font-weight: bold;
 }
 
-.create_box .text-field .bottom .import-btn{
-    border-radius: 30px;
-    background-color: var(--fds-gray-00);
-    padding: 5px 10px;
-    display: inline-flex;
-    /* 자식 요소들을 가로 배치(flex) 시키고 인라인처럼 보이게 할 것! */
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.create_box .text-field .bottom .import-btn {
+  border-radius: 30px;
+  background-color: var(--fds-gray-00);
+  padding: 5px 10px;
+  display: inline-flex;
+  /* 자식 요소들을 가로 배치(flex) 시키고 인라인처럼 보이게 할 것! */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.create_box .text-field .bottom .import-btn:hover{
-    background: #e3e3e3;
+.create_box .text-field .bottom .import-btn:hover {
+  background: #e3e3e3;
 }
 
-
-#id_photo{
-    display: none;
+#id_photo {
+  display: none;
 }
 
-#photo_label{
-    display: flex;
-    align-items: center;
+#photo_label {
+  display: flex;
+  align-items: center;
 }
 
-.create_box .submit{
-    border-top: 1px solid #dddfe2;
-    text-align: center;
-    padding: 5px 10px;
-    display: none;
+.create_box .submit {
+  border-top: 1px solid #dddfe2;
+  text-align: center;
+  padding: 5px 10px;
+  display: none;
 }
 
-.create_box .submit input{
-    width: 100%;
-    height: 28px;
-    border-radius: 3px;
-    background: #4267b2;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
+.create_box .submit input {
+  width: 100%;
+  height: 28px;
+  border-radius: 3px;
+  background: #4267b2;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.create_box .submit input:disabled{
-    background: #9cb4d8;
+.create_box .submit input:disabled {
+  background: #9cb4d8;
 }
 
-#wrapper .contents{
-    background-color: #fff;
-    margin-bottom: 10px;
-    border: 1px solid #dddfe2;
-    border-radius: 3px;
-    color: var(--fds-gray-70);
-    font-size: 13px;
-    font-weight: bold;
+#wrapper .contents {
+  background-color: #fff;
+  margin-bottom: 10px;
+  border: 1px solid #dddfe2;
+  border-radius: 3px;
+  color: var(--fds-gray-70);
+  font-size: 13px;
+  font-weight: bold;
 }
 
-.contents header{
-    position: relative;
-    padding: 10px 20px;
+.contents header {
+  position: relative;
+  padding: 10px 20px;
 }
 
-.contents .profile_container{
-    display: flex;
-    align-items: center;
+.contents .profile_container {
+  display: flex;
+  align-items: center;
 }
 
-.contents .profile_container .name{
-    color: var(--fds-fb-blue-75);
-    font-size: 14px;
-    margin-bottom: 5px;
-
+.contents .profile_container .name {
+  color: var(--fds-fb-blue-75);
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
-.contents .profile_container .time{
-    font-size: 12px;
-    color: #616770;
+.contents .profile_container .time {
+  font-size: 12px;
+  color: #616770;
 }
 
-.contents .profile_container .profile_img{
-    width: 40px;
-    height: 40px;
+.contents .profile_container .profile_img {
+  width: 40px;
+  height: 40px;
 }
 
-.contents .more{
-    margin-left: auto;
-    cursor: pointer;
-    padding: 10px 0;
-    position: relative;
+.contents .more {
+  margin-left: auto;
+  cursor: pointer;
+  padding: 10px 0;
+  position: relative;
 }
 
-.contents .more.active .hidden_menu{
-    /* hidden_menu의 부모인 more가 active란 클래스를 받았을 때 hidden_menu가 block이 되도록 */
-    display: block;
+.contents .more.active .hidden_menu {
+  /* hidden_menu의 부모인 more가 active란 클래스를 받았을 때 hidden_menu가 block이 되도록 */
+  display: block;
 }
 
-
-.contents .hidden_menu{
-    position: absolute;
-    right: 20px;
-    top: 30px;
-    width: 100px;
-    border-radius: 3px;
-    border: 1px solid #dddfe2;
-    display: none;
-    /* 클릭했을 때만 나오도록 display: none; */
+.contents .hidden_menu {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 100px;
+  border-radius: 3px;
+  border: 1px solid #dddfe2;
+  display: none;
+  /* 클릭했을 때만 나오도록 display: none; */
 }
 
-.contents .hidden_menu > li{
-    padding: 5px 10px;
-    background-color: #fff;
-    text-align: center;
-    border-bottom: 1px solid rgba(221,223,226,0.57);
+.contents .hidden_menu > li {
+  padding: 5px 10px;
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 1px solid rgba(221, 223, 226, 0.57);
 }
 
-.contents .hidden_menu > li >*{
-    /* li 안에 있는 모든 태그들을 선택*/
-    background: transparent;
-    border: none;
-    font-size: 12px;
-    outline: none;
-    /* 클릭했을 때 나오는 테두리를 삭제 */
-    cursor: pointer;
+.contents .hidden_menu > li > * {
+  /* li 안에 있는 모든 태그들을 선택*/
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  outline: none;
+  /* 클릭했을 때 나오는 테두리를 삭제 */
+  cursor: pointer;
 }
 
-.contents .hidden_menu > li:hover{
-    background: #ddd;
+.contents .hidden_menu > li:hover {
+  background: #ddd;
 }
 
-.contents .main_article{
-    padding: 5px 20px;
-    color: var(--fds-gray-100);
-    font-size: 14px;
-    line-height: 1.38;
-    font-weight: normal;
+.contents .main_article {
+  padding: 5px 20px;
+  color: var(--fds-gray-100);
+  font-size: 14px;
+  line-height: 1.38;
+  font-weight: normal;
 }
 
-.contents .img_section{
-    overflow: hidden;
-    box-sizing: border-box;
-    /* 형태 계산시 border의 좌우값도 포함됨. 나중에 삐걱거리기 때문에
+.contents .img_section {
+  overflow: hidden;
+  box-sizing: border-box;
+  /* 형태 계산시 border의 좌우값도 포함됨. 나중에 삐걱거리기 때문에
     border의 영역도 내 크기로 포함시키겠음!을 의미 */
-    border: 1px solid#dddfe2;
+  border: 1px solid#dddfe2;
 }
 
-.contents .img_section img{
-    width: 100%;
+.contents .img_section img {
+  width: 100%;
 }
+
+.contents .ajax_field {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents .btn_container {
+  display: flex;
+  height: 42px;
+  border-top: 1px solid #dddfe2;
+  border-bottom: 1px solid #dddfe2;
+  margin: 0 10px;
+}
+
+.contents .btn_container > div {
+  /* space-between은 부모에게 주는 속성 
+  자식에게 주는 속성으로 줘봄!*/
+  flex: 1;
+  /* grow 1 shrink 1 basis 0 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents .btn_container > div:hover {
+  background-color: var(--fds-gray-10);
+}
+
+.contents .comment_container{
+  margin: 10px 20px;
+  color: var(--fds-fb-blue-75);
+}
+
+.contents .comment_container .id{
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.contents .comment_container .text_container{
+  display: flex;
+  padding: 10px;
+  background: var(--fds-gray-05);
+  border-radius: 30px;
+}
+
+.contents .comment_container .name{
+  margin-right: 5px; 
+}
+
+.contents  .comment_container .text_field{
+  color: var(--fds-gray-100);
+  font-weight: 300;
+}
+
+.contents .comment_input{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.contents .comment_input .input_container{
+  width: 100%;
+  padding: 7px 0;
+  background: var(--fds-gray-05);
+  border: 1px solid #ccd0d5;
+  border-radius: 30px;
+  text-align: center; 
+  position: relative;
+}
+
+.contents .input_container input{
+  width: 90%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.contents .input_container button{
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* 부모기준으로 50%만큼 밀어주게 되면
+  y축 절반에서 시작인데 다시 거기서 -50%만큼 올려주면
+  y축 정렬이 됨 */
+  cursor: pointer;
+}
+
+
+
+

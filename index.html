@@ -21,7 +21,7 @@
                    <h1 class= "icon icon--facebook-white"><a href="#"></a></h1>
 
                    <div class="search_container">
-                       <form action="">
+                       <form action="#">
                        <!-- 1개의 input에는 1개에 label tag -->
                        <label for="search"></label>
                        <input type="text" id="search" placeholder="검색">
@@ -228,7 +228,7 @@
                 <article class="create_box">
                     <h2 class="title">게시물 만들기</h2>
                     <div class="text-field">
-                        <form action="">
+                        <form action="#">
                             <div class="top">
                                 <div class="profile_img"><img src="imgs/profile/me.jpg" alt=""></div>
                                 <p><textarea name="content" id="text-field" cols="50" rows="5" data-name="add" placeholder="P.d님, 무슨 생각을 하고 계신가요?"></textarea></p>
@@ -283,6 +283,70 @@
                     </div>
                     <div class="img_section">
                         <a href="#"><img src="imgs/thumb/doggy.jpg" alt=""></a>
+                    </div>
+                    <div class="ajax_field">
+                        <div class="like">
+                            좋아요
+                            <span class="like_count" id="like-count-37">1</span>
+                            개
+                            <!-- ajax로 count되는 것을 보통 id 값으로 넣어줌 -->
+                        </div>
+                        <div class="comment">
+                            댓글
+                            <span class="comment_count" id="#">1</span>
+                            개
+                        </div>
+                    </div>
+
+                    <div class="btn_container">
+                        <div class="like_btn" data-name="like">
+                            <span class="icon icon--like-line"></span>
+                            좋아요
+                        </div>
+                        <div class="comment_btn">
+                            <span class="icon icon--comment-line"></span>
+                            댓글
+                        </div>
+                    </div>
+                    <div class="comment_container">
+                        <div class="id">
+                            <div class="profile_img"><img src="imgs/profile/bear.png" alt=""></div>
+                            <div class="comment_field">
+                                <div class="text_container">
+                                    <div class="name"><a href="#">곰</a></div>
+                                    <div class="text_field">우웡워워웅</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="id">
+                            <div class="profile_img"><img src="imgs/profile/tiger.png" alt=""></div>
+                            <div class="comment_field">
+                                <div class="text_container">
+                                    <div class="name"><a href="#">호랑이</a></div>
+                                    <div class="text_field">크르르릉</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="id">
+                            <div class="profile_img"><img src="imgs/profile/me.jpg" alt=""></div>
+                            <div class="comment_field">
+                                <div class="text_container">
+                                    <div class="name"><a href="#">P.d</a></div>
+                                    <div class="text_field">⚆ᗝ⚆</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment_input">
+                        <div class="profile_img"><img src="imgs/profile/me.jpg" alt=""></div>
+                        <div class="input_container">
+                            <label for="comment37"></label>
+                            <input type="text" id="comment37" placeholder="댓글을 입력하세요.">
+                            <button class="send" data-name="send">
+                                <!-- 클릭이 돼야 하니까 data-name 넣어줌 -->
+                                <span class="icon--send"></span>
+                            </button>
+                        </div>
                     </div>
                 </article>
             </section>
