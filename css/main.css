@@ -371,7 +371,46 @@
   font-weight: 300;
 }
 
+#side_box{
+  width: 205px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 52px;
+  border-left: 1px solid #dadde1;
+}
 
+#side_box > ul{
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* x축으론 넘치지 않게, y축으론 스크롤 되게 */
+}
+
+#side_box > ul > li{
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+#side_box > ul > li:hover{
+  background: #dddfe2;
+  box-shadow: 1px 0 0 #eaebed inset;
+  /* x축, y축, 블럭 값(안개), 색상, inset(내부 그림자) */
+}
+
+#side_box .light{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgb(66,173,42);
+  margin-left: auto;
+}
+
+#side_box .profile_img{
+  width: 25px;
+  height: 25px;
+}
 
 
 
