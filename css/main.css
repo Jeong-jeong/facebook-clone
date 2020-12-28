@@ -412,6 +412,23 @@
   height: 25px;
 }
 
+@media screen and (max-width: 1240px){
+  #wrapper{
+    padding-right: 0;
+    width: 90%
+  }
+  /* html head부분에 common.css가 main보다 위에 있기 때문에
+  우선 순위에서 밀려 main.css에 반영이 안됨.
+  우선순위에서 밀리는 부분만 main.css에 따로 넣어줌 */
+  
+  #contents_container{
+    position: static;
+    left: 0;
+    margin: 0 auto;
+    /* 기존 relative를 초기화 시키고, 가운데 정렬 */
+  }
+
+}
 
 
 
