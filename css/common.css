@@ -767,7 +767,12 @@ body {
   z-index: 100;
 }
 
-#header .notice {
+#header .bell.on .notice{
+  display: block;
+}
+
+
+#header .notice{
   width: 432px;
   background-color: #fff;
   position: absolute;
