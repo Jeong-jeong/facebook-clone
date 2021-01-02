@@ -785,11 +785,6 @@ body {
   display: none;
 }
 
-#header .bell.on .notice {
-  display: block;
-}
-
-
 #header .icon--arrow-top {
   position: absolute;
   right: 10px;
